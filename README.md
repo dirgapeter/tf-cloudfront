@@ -29,7 +29,6 @@ This module will configure a specific Clourfront distribution that serves static
 
 | Name | Description |
 |------|-------------|
-| domain |  |
 | website\_cdn |  |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

@@ -84,6 +84,8 @@ resource "aws_cloudfront_distribution" "website_cdn" {
 # Create A record for distribution
 
 resource "aws_route53_record" "domain" {
+  count = var.r53_hosted_zone_id != null ? 1 : 0
+
   zone_id = var.r53_hosted_zone_id
   name    = var.domain
   type    = "A"

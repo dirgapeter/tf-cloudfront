@@ -92,6 +92,7 @@ variable "acm_certificate_arn" {
 variable r53_hosted_zone_id {
   description = "The zone_id of the hosted zone where the DNS record for validation needs to be added"
   type        = string
+  default     = null
 }
 
 variable domain {
